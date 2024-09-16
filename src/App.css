@@ -1,0 +1,18 @@
+/* .chakra-ui-light {
+  overflow-y: hidden;
+} */
+
+.texttomoto{
+  color: #ff716f;
+}
+.topposttitle:hover{
+  color: #ff716f;
+
+}
+
+.min-w-fi{
+  min-height: 55vh;
+}
+.min-ww-fi{
+  min-height: 80vh;
+}
