@@ -12,12 +12,8 @@ import BDashboardIcon from "../assets/img/Navbar/b-dash.png";
 import GBillboardIcon from "../assets/img/Navbar/g-billb.png";
 import BBillboardIcon from "../assets/img/Navbar/b-billb.png";
 import { Tooltip, Box } from "@chakra-ui/react";
-import GFeedbackIcon from "../assets/img/Navbar/g-feed.png";
-import BFeedbackIcon from "../assets/img/Navbar/b-feed.png";
 import GCommunityIcon from "../assets/img/Navbar/g-comm.png";
 import BCommunityIcon from "../assets/img/Navbar/b-comm.png";
-import Stories from "../assets/img/Navbar/stories.png";
-import StoriesFill from "../assets/img/Navbar/storiesfill.png";
 import { connect } from "react-redux";
 
 import { setPage } from "../store/auth";
