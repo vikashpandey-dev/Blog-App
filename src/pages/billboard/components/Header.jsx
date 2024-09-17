@@ -22,8 +22,7 @@ import { connect } from "react-redux";
 import ImageUploading from "react-images-uploading";
 import { FiUpload } from "react-icons/fi";
 import { GrFormClose } from "react-icons/gr";
-import { getBillboard } from "../../../api/billBoard";
-import { addBillboard } from "../../../api/billBoard";
+import { addBillboard ,getBillboard} from "../../..../src/api/billBoard";
 import { useForm, Controller } from "react-hook-form";
 import Swal from "sweetalert2";
 function Header(props) {
