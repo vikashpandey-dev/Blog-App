@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "react-redux";
-import { getBillboard } from "../../../api/billBoard";
+import { getBillboard } from "../../../../src/api/billboard";
 import { RiH1 } from 'react-icons/ri';
 function Category(props) {
   const getBlog=async()=>{
