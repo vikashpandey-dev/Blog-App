@@ -22,7 +22,9 @@ import { connect } from "react-redux";
 import ImageUploading from "react-images-uploading";
 import { FiUpload } from "react-icons/fi";
 import { GrFormClose } from "react-icons/gr";
-import { addBillboard ,getBillboard} from "../../..../src/api/billBoard";
+// import { addBillboard , getBillboard} from "../../../../src/api/billBoard";
+import { getBillboard,addBillboard} from "../../../../src/api/billboard";
+
 import { useForm, Controller } from "react-hook-form";
 import Swal from "sweetalert2";
 function Header(props) {
