@@ -4,8 +4,8 @@ import { GetUSers } from "../../../api/users";
 import moment from "moment";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
-import Card1 from "../../../../src/assets/icons/Card1.png";
-import Card3 from "../../../../src/assets/icons/Card3.png";
+// import Card1 from "../../../../src/assets/icons/Card1.png";
+// import Card3 from "../../../../src/assets/icons/Card3.png";
 import { useDispatch, useSelector } from "react-redux";
 import { Dashboardcount } from "../../../../src/api/billboard";
 import Loader from "../../Loder/Loder";
@@ -49,7 +49,7 @@ function Header(props) {
                 onClick={() => redirectotpage("community", "post")}
               >
                 <div>
-                  <img src={Card1} alt="" />
+                  <img src="" alt="" />
                 </div>
                 <div className="text">
                   <p className="hdr-subttl">Total Blog</p>
@@ -72,7 +72,7 @@ function Header(props) {
                 onClick={() => redirectotpage("community", "users")}
               >
                 <div>
-                  <img src={Card3} alt="" />
+                  <img src="" alt="" />
                 </div>
                 <div className="text">
                   <p className="hdr-subttl">Total User</p>
