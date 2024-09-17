@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { setBillboardData,BlogDetails,setDashboard } from "../../store/billBoard";
 import APIName from "../endPoints";
-import { billBoardRepo } from "./billBoardRepo";
+import { billBoardRepo } from "../billboard/billboardRepo";
 import Swal from 'sweetalert2'
 export const addBillboard = createAsyncThunk(
   // console.log("jsdhksjadasd"),
