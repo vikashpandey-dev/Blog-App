@@ -26,18 +26,18 @@ function Right(props) {
                         <div key={i} className="xl:flex lg:gap-2 mb-4 border-b pb-4">
                             {/* Image Section */}
                             <div
-                                className="relative md:w-full xl:w-1/3 cursor-pointer overflow-hidden rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105"
+                                className="relative md:w-full xl:w-2/4 cursor-pointer overflow-hidden rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105"
                                 onClick={() => BlogDetails(val)}
                             >
                                 <img
-                                    className="w-full h-64  object-cover"
+                                    className="w-full sm:h-64 md:h-64  object-cover"
                                     src={`${import.meta.env.VITE_BLOG_IMAGES_URL}${val.images}`}
                                     alt={val.title}
                                 />
                             </div>
 
                             {/* Content Section */}
-                            <div className="sm:w-full xl:w-2/3">
+                            <div className="sm:w-full xl:w-2/4">
                                 <h2
                                     className="text-lg font-bold text-gray-900 hover:text-blue-600 cursor-pointer transition-colors duration-300"
                                     onClick={() => BlogDetails(val)}
