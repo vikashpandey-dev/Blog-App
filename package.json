@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://alumniuat.icicibank.com/AlumniAdmin",
+  "homepage": "https://alumniuat.icicibank.com/Blog-App",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -16,9 +16,11 @@ import { getBillboard } from "../../../api/billBoard";
 import { RiH1 } from 'react-icons/ri';
 function Category(props) {
   const getBlog=async()=>{
-    await props.getBillboardAPI({
-      isdeleated: "0",
-    });
+    const payload={}
+    if(props.userData.role=="user"){
+      object.assign(payload,{_id:props.userData._id})
+    }
+    await props.getBillboardAPI(payload);
   }
   useEffect(()=>{
 getBlog()

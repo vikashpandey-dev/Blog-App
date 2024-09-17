@@ -170,7 +170,7 @@ const CheckLogin = (err) => {
     const baseUrl = window.location.protocol + "//" + window.location.host;
     getSuccessMessage("warning", "Your Session Expired?");
     setTimeout(() => {
-      window.location.href = baseUrl + "/" + "AlumniAdmin/login";
+      window.location.href = baseUrl + "/" + "Blog-App/login";
     }, 1000);
   }
 };

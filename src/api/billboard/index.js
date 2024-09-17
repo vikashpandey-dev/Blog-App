@@ -9,8 +9,9 @@ export const addBillboard = createAsyncThunk(
   async (payload, thunkAPI) => {
     try {
       const reqPayload = new FormData();
-      const { data } = await billBoardRepo.addBillboard(payload);
-      if (data.data.Responsecode == 100) {
+      const  data  = await billBoardRepo.addBillboard(payload);
+      console.log(data,"datadata")
+      if (data.status == 200) {
         await getSuccessMessage("success", "Blog Added")
         return data;
       }
@@ -90,7 +91,7 @@ const CheckLogin = (err) => {
     const baseUrl = window.location.protocol + "//" + window.location.host;
     getSuccessMessage("warning", "Your Session Expired?");
     setTimeout(() => {
-      window.location.href = baseUrl + "/" + "AlumniAdmin/login";
+      window.location.href = baseUrl + "/" + "Blog-App/login";
     }, 1000);
   }
 };
@@ -101,7 +102,7 @@ export const updateBillboard = createAsyncThunk(
     try {
       const response = await billBoardRepo.updateBillboard(payload);
       if (response.status == 200) {
-        await getSuccessMessage("success", "Billboard Updated")
+        await getSuccessMessage("success", "Blog Updated")
         return response;
       }
     } catch (err) {

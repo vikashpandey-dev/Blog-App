@@ -122,7 +122,7 @@ function Login(props) {
               </form>
               <p className="pt-4 text-center">
                 Don't have an account?{" "}
-                <Link to="/AlumniAdmin/register" className="text-primary">
+                <Link to="/Blog-App/register" className="text-primary">
                   Register
                 </Link>
               </p>
@@ -141,7 +141,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state, props) => {
   return {
     BillBoards: state?.billBoard?.data,
-    toggletabs: state.banner.toggletabs,
+    // toggletabs: state.banner.toggletabs,
     bannerdata: state.banner.data,
   };
 };

@@ -23,7 +23,7 @@ getBlog()
     try{
       console.log(val,"valval")
       dispatch(BlogDetailsPage(val))
-    history.push('/AlumniAdmin/Details');
+    history.push('/Blog-App/Details');
 
     // await props.BlogDetailsPageApi(val)
     }catch(err){

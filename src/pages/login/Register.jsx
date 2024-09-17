@@ -136,7 +136,7 @@ function Register(props) {
               </form>
               <p className="pt-4 text-center">
                 Already have an account?{" "}
-                <Link to="/AlumniAdmin/login" className="text-primary">
+                <Link to="/Blog-App/login" className="text-primary">
                   Login
                 </Link>
               </p>

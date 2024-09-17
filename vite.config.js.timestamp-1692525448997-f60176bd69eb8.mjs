@@ -13,7 +13,7 @@ var vite_config_default = defineConfig({
     chunkSizeWarningLimit: 5e3
     // Set the limit to an appropriate value
   },
-  base: "/AlumniAdmin/"
+  base: "/Blog-App/"
 });
 export {
   vite_config_default as default

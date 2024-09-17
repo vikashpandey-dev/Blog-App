@@ -11,7 +11,7 @@ const BlogDetails = () => {
       <img
         src={`${import.meta.env.VITE_BLOG_IMAGES_URL}${blogDetails.images}`}
         alt={blogDetails.title}
-        className="w-full h-full object-cover"
+        className="w-full lg:h-96 sm:h-40 object-cover"
       />
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
         <h1 className="text-white text-4xl font-bold">{blogDetails.title}</h1>

@@ -17,5 +17,5 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 5000, // Set the limit to an appropriate value
   },
-  base: "/AlumniAdmin/",
+  base: "/Blog-App/",
 });

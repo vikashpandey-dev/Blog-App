@@ -16,3 +16,14 @@
 .min-ww-fi{
   min-height: 80vh;
 }
+.bgheight{
+  height: 70vh;
+}
+
+@media (min-width: 640px) {
+  /* Styles for screens 640px and above */
+  .your-class {
+    height: 70vh;
+height: 250vh;
+  }
+}

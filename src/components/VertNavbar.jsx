@@ -27,10 +27,7 @@ function Navbar(props) {
   const dispatch = useDispatch();
   const history = useHistory();
   const Logout = async (props) => {
- 
     localStorage.removeItem("token");
-
-  
     window.location.href = `${import.meta.env.BASE_URL}login`;
   };
   const DisableNavbar = (id) => {
@@ -39,9 +36,6 @@ function Navbar(props) {
     }
     if (id === "billboard") {
       dispatch(setPage(1));
-    }
-    if (id === "feedback") {
-      dispatch(setPage(2));
     }
     if (id === "community") {
       dispatch(setPage(3));
@@ -58,7 +52,7 @@ function Navbar(props) {
       <div className="top-section w-full">
         <Link to={`${import.meta.env.BASE_URL}home`}>
           <img
-            src={Ilogo}
+            src="https://up.yimg.com/ib/th?id=OIP.fUhYce_z6yV8dj8qLFkwnAHaHa&pid=Api&rs=1&c=1&qlt=95&w=111&h=111"
             alt="ICICI Logo"
             className="h-14 mb-16 mx-auto py-2 "
           />
@@ -88,13 +82,13 @@ function Navbar(props) {
             <Tooltip
             label={
               <Box className="font-normal p-1 text-gray-600">
-                <strong> </strong>Community <br />
+                <strong> </strong>All Users <br />
               </Box>
             }
             bg="#d3eaf7"
             placement="left-start"
           >
-            <Link to={`${import.meta.env.BASE_URL}community`}>
+            <Link to={`${import.meta.env.BASE_URL}users`}>
               <img
                 src={activePage == 3 ? BCommunityIcon : GCommunityIcon}
                 alt="ICICI Logo"
@@ -111,7 +105,7 @@ function Navbar(props) {
           <Tooltip
             label={
               <Box className="font-normal p-1 text-gray-600">
-                <strong> </strong>Banner <br />
+                <strong> </strong>All-Blog <br />
               </Box>
             }
             bg="#d3eaf7"
@@ -159,7 +153,7 @@ const mapStateToProps = (state, props) => {
   let token = localStorage.getItem("token");
   if (!token) {
     const baseUrl = window.location.protocol + "//" + window.location.host;
-    window.location.href = baseUrl + "/" + "AlumniAdmin/login";
+    window.location.href = baseUrl + "/" + "Blog-App/login";
   }
   return {
     userData: state.auth.data,

@@ -147,7 +147,7 @@ const mapStateToProps = (state, props) => {
   let token=localStorage.getItem("token")
   if(!token){
     const baseUrl = window.location.protocol + "//" + window.location.host;
-      window.location.href = baseUrl + "/" + "AlumniAdmin/login";
+      window.location.href = baseUrl + "/" + "Blog-App/login";
   }
   return {
     userData: state.auth.data,

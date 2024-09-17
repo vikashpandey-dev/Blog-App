@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   users: {},
-  toggletabs: false,
+  // toggletabs: false,
   IsPage:null,
   Alluser:{}
 };

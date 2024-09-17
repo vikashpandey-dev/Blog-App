@@ -97,7 +97,6 @@ export const updateprofile = createAsyncThunk(
       }
     } catch (err) {
       console.log(err);
-      alert("Something went wrong", "");
     }
     return false;
   }
@@ -108,7 +107,6 @@ export const alluser = createAsyncThunk(
   async (payload, thunkAPI) => {
     try {
       const response = await authRepo.alluser(payload);
- console.log(response,"responseresponseresponse")
       if (response.status == 200) {
     
 
@@ -117,7 +115,6 @@ export const alluser = createAsyncThunk(
       }
     } catch (err) {
       console.log(err);
-      alert("Something went wrong", "");
     }
     return false;
   }

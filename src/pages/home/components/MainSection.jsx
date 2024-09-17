@@ -363,7 +363,7 @@ try{
 
       <div className="bg-white px-6 pt-6 pb-3 min-w-fi">
         <div className="flex justify-between items-center">
-          <p className="hdr-title">All Blog</p>
+          <p className="hdr-title">Pending Blogs</p>
           <p className="text-primary"></p>
         </div>
         <div className="py-6 grid grid-cols-3 gap-4">
@@ -418,7 +418,7 @@ try{
             <h1>No Blog</h1>
           )}
         </div>
-        <div className="flex justify-end gap-1 px-5">
+        {/* <div className="flex justify-end gap-1 px-5">
           <ReactPaginate
             previousLabel={"<"}
             className="flex justify-end"
@@ -439,7 +439,7 @@ try{
             breakLinkClassName={"page-link"}
             activeClassName={"active"}
           />
-        </div>
+        </div> */}
       </div>
     </>
   );

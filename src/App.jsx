@@ -5,13 +5,12 @@ import VerticleNavbar from "../src/components/VertNavbar";
 import HorizNavbar from "../src/components/HorizNavbar";
 import { Switch, Route } from "react-router-dom";
 import Billboard from "./pages/billboard/Billboard";
-import Feedback from "./pages/feedback/Feedback";
-import Community from "./pages/community/Community";
 import Homes from "./pages/Users/Home/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./pages/Users/Footer/Footer";
 import Details from "./pages/Users/BlogDetails/Details";
 import { useLocation } from 'react-router-dom';
+import Community from "../src/pages/community/Community"
 import Register from "./pages/login/Register";
 function App() {
   const location = useLocation();
@@ -59,12 +58,7 @@ function App() {
             component={Billboard}
           />
           <Route
-            path={`${import.meta.env.BASE_URL}feedback`}
-            exact
-            component={Feedback}
-          />
-          <Route
-            path={`${import.meta.env.BASE_URL}community`}
+            path={`${import.meta.env.BASE_URL}users`}
             exact
             component={Community}
           />

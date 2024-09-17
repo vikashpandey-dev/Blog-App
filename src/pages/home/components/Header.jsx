@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 import { getBillboard,Dashboardcount } from "../../../api/billBoard";
-import { getBanner, handletabs } from "../../../api/banner";
-import { getEvent } from "../../../api/community";
-import { getPost } from "../../../api/community";
 import { GetUSers } from "../../../api/users";
 import moment from "moment";
 import { connect } from "react-redux";
@@ -13,7 +10,6 @@ import Card2 from "../../../assets/icons/Card2.png";
 import Card3 from "../../../assets/icons/Card3.png";
 import Card4 from "../../../assets/icons/Card4.png";
 import Card5 from "../../../assets/icons/Card5.png";
-import { handletoggletabse } from "../../../api/banner";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../../Loder/Loder";
 import { setPage } from "../../../store/auth";
