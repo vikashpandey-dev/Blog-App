@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
-import { GetUSers } from "../../../api/users";
 import moment from "moment";
 import { connect } from "react-redux";
-import { useHistory } from "react-router-dom";
-import Card1 from "../../../assets/icons/Card1.png";
-import Card2 from "../../../assets/icons/Card2.png";
+
 import Card3 from "../../../assets/icons/Card3.png";
-import Card4 from "../../../assets/icons/Card4.png";
-import Card5 from "../../../assets/icons/Card5.png";
-import { useDispatch, useSelector } from "react-redux";
 import { Dashboardcount } from "../../../../src/api/billboard";
 
 import Loader from "../../Loder/Loder";
@@ -54,9 +48,7 @@ function Header(props) {
                 className="flex gap-4 items-center rounded-xl cursor-pointer"
                 onClick={() => redirectotpage("community", "post")}
               >
-                <div>
-                  <img src={Card1} alt="" />
-                </div>
+               
                 <div className="text">
                   <p className="hdr-subttl">Total Blog</p>
                   {props.setDashboard ? (
