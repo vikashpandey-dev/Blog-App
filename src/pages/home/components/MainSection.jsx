@@ -40,9 +40,10 @@ import {
   DeletePost,
 } from "../../../api/community";
 import moment from "moment";
-import { getBillboard,updateBillboard} from "../../../api/billBoard";
+import { getBillboard,updateBillboard} from "../../../../src/api/billboard";
 
 import { connect } from "react-redux";
+
 const MainSection = (props) => {
   const [images, setImages] = React.useState([]);
   const [tags, setTags] = useState("");
@@ -385,14 +386,14 @@ try{
                         </button>
                           <button className="text-red-500" onClick={()=>{handleupdatereject(val,"Reject")}}>Reject
                           </button></div>
-                        <TbEdit
+                        {/* <TbEdit
                           className="text-primary text-2xl mx-2 cursor-pointer"
                           onClick={() => updateValues(val)}
                         />
                         <RiDeleteBinLine
                           className="text-primary mx-2 text-xl cursor-pointer"
                           onClick={() => deletePost(val)}
-                        />
+                        /> */}
                       </div>
                     </div>
                     {val.type == "text" ? (

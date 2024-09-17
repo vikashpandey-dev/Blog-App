@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
-import { getBillboard,Dashboardcount } from "../../../api/billBoard";
 import { GetUSers } from "../../../api/users";
 import moment from "moment";
 import { connect } from "react-redux";
@@ -11,6 +10,8 @@ import Card3 from "../../../assets/icons/Card3.png";
 import Card4 from "../../../assets/icons/Card4.png";
 import Card5 from "../../../assets/icons/Card5.png";
 import { useDispatch, useSelector } from "react-redux";
+import { Dashboardcount } from "../../../../src/api/billboard";
+
 import Loader from "../../Loder/Loder";
 import { setPage } from "../../../store/auth";
 function Header(props) {

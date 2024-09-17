@@ -47,20 +47,9 @@ function Login(props) {
     <div className="w-full">
       <div className="flex flex-wrap w-full md:h-screen lg:h-screen">
         <div className="md:w-4/6 lg:w-4/6 w-full bg-img-login md:py-16 lg:py-20 py-12 text-white relative">
-          {/* <img
-            src="https://plus.unsplash.com/premium_photo-1683211783920-8c66ab120c09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D"
-            alt="ICICI Logo"
-            className="md:h-14 lg:h-16 h-10 mr-auto md:px-16 lg:px-20 px-8 lg:mt-6"
-          /> */}
+      
           <div className="w-full mt-auto text-center absolute bottom-24 md:px-16 lg:px-20 px-8 ">
-            {/* <h1 className="font-extrabold fsize62-26  w-full text-left">
-              Sign In To
-              <span className="text-primary"> Refer</span> Your Friend
-            </h1> */}
-            {/* <p className="login-subttl md:mt-4 lg:mt-4 mt-2 w-full text-left lg:font-bold lg:text-4xl md:font-bold md:text-4xl">
-              Lorem ipsum dolor sit amet consectetur. Eget ut dui elit leo odio
-              nisi ultrices integer.
-            </p> */}
+         
           </div>
         </div>
         <div className="lg:w-1/3 md:w-1/3 w-full md:h-full lg:h-full flex">
@@ -81,10 +70,7 @@ function Login(props) {
                     defaultValue=""
                     rules={{
                       required: "Employee ID is required",
-                      // pattern: {
-                      //   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                      //   message: 'Invalid Employee address',
-                      // }, 
+                    
                     }}
                     render={({ field }) => <Input {...field} placeholder="Enter employee ID" />}
                   />
@@ -101,19 +87,14 @@ function Login(props) {
                     defaultValue=""
                     rules={{
                       required: "password is required",
-                      // pattern: {
-                      //   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                      //   message: 'Invalid password address',
-                      // },
+                  
                     }}
                     render={({ field }) => <Input {...field} type="password" placeholder="Enter password" />}
                   />
                   <FormErrorMessage>
                     {errors.password && errors.password.message}
                   </FormErrorMessage>
-                  {/* <div className="flex justify-end mt-1">
-                  <span className="text-lg text-primary font-normal cursor-pointer">Forgot Password</span>
-                </div> */}
+              
                 </FormControl>
                
                 <Button mt={4} colorScheme='blue' type="submit" className="w-full" bg="#053C6D" h="14">
@@ -142,7 +123,7 @@ const mapStateToProps = (state, props) => {
   return {
     BillBoards: state?.billBoard?.data,
     // toggletabs: state.banner.toggletabs,
-    bannerdata: state.banner.data,
+    bannerdata: state?.banner?.data,
   };
 };
 

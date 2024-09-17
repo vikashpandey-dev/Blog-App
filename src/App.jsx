@@ -63,7 +63,8 @@ function App() {
             component={Community}
           />
         </Switch>
-        <Footer/>
+        
+        {localStorage.getItem("token")?(<Footer/>):(null)}
 
       </div>
     </div>
